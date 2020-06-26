@@ -1,5 +1,10 @@
+/**
+ * License: MIT. See LICENSE in root directory.
+ * \date 2020/06/26
+ */
 
 #include <cstdio>
+
 #include "../src/memory.hpp"
 
 using Ensemble::MemoryPool;

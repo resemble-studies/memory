@@ -1,6 +1,6 @@
 /**
  * License: MIT. See LICENSE in root directory.
- * \date 2020/06/19
+ * \date 2020/06/26
  */
 
 #pragma once
@@ -51,9 +51,6 @@ public:
     void reset();
 };
 
-/**
- *
- */
 class MemoryBlock {
 
     friend MemoryPool;

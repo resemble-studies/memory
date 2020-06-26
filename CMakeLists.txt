@@ -1,3 +1,5 @@
+# License: MIT. See LICENSE in root directory.
+# Date: 2020/06/26
 
 cmake_minimum_required(VERSION 3.1.0)
 
