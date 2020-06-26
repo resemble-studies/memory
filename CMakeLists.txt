@@ -13,8 +13,10 @@ target_sources(${ENSEMBLE_MEMORY_LIB} PRIVATE
     "${CMAKE_CURRENT_LIST_DIR}/src/memory.hpp"
     )
 
-set(ENSEMBLE_MEMORY_EXE "ensemble-memory-exe")
-add_executable(${ENSEMBLE_MEMORY_EXE}
-    "${CMAKE_CURRENT_LIST_DIR}/test/main.cpp"
-    )
-target_link_libraries(${ENSEMBLE_MEMORY_EXE} ${ENSEMBLE_MEMORY_LIB})
+if (CMAKE_BUILD_TYPE MATCHES "^[Dd]ebug")
+    set(ENSEMBLE_MEMORY_EXE "ensemble-memory-exe")
+    add_executable(${ENSEMBLE_MEMORY_EXE}
+        "${CMAKE_CURRENT_LIST_DIR}/test/main.cpp"
+        )
+    target_link_libraries(${ENSEMBLE_MEMORY_EXE} ${ENSEMBLE_MEMORY_LIB})
+endif ()
