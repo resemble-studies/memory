@@ -1,9 +1,10 @@
+/* License: MIT. See LICENSE in root directory. */
+
 /**
- * License: MIT. See LICENSE in root directory.
- * \date 2020/06/26
+ * \date 2020/06/29
  */
 
-#include "memory.hpp"
+#include "../../inc/ensemble/memory.hpp"
 
 namespace Ensemble {
 

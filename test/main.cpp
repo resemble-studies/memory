@@ -1,11 +1,12 @@
+/* License: MIT. See LICENSE in root directory. */
+
 /**
- * License: MIT. See LICENSE in root directory.
- * \date 2020/06/26
+ * \date 2020/06/29
  */
 
 #include <cstdio>
 
-#include "../src/memory.hpp"
+#include <ensemble/memory.hpp>
 
 using Ensemble::MemoryPool;
 
@@ -19,4 +20,5 @@ int main()
     auto mp = new MemoryPool();
 
     printf("Init: %s", mp->initialize(sizeof(SampleStruct), 0x100, true) ? "T" : "F");
+    mp->allocate();
 }
